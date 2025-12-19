@@ -1,7 +1,7 @@
 #ifndef THREAD_MANAGER_H
 #define THREAD_MANAGER_H
 
-#include "CriticalSection.h"
+//#include "CriticalSection.h"
 
 #include <windows.h>
 #include <windowsX.h>

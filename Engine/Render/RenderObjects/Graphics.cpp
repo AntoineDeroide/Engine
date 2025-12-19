@@ -1,5 +1,6 @@
+#include <iostream>
+
 #include "Graphics.h"
-#include "../Core/ExceptionHandler.h"
 
 Graphics::Graphics() : 
 	m_pCmdList(nullptr),
@@ -14,13 +15,13 @@ bool Graphics::Init()
 	HRESULT res = CreateDXGIFactory(IID_PPV_ARGS(&m_pFactory));
 	if (FAILED(res))
 	{
-		ExceptionHandler::Instance().Shout("[GRAPHICS::Init()] | Couldm't create DXGIFactory");
+		std::cout <<"[GRAPHICS::Init()] | Couldm't create DXGIFactory\n";
 	}
 
 	res = D3D12CreateDevice(nullptr, D3D_FEATURE_LEVEL_1_0_GENERIC, IID_PPV_ARGS(&m_pDevice));
 	if (FAILED(res))
 	{
-		ExceptionHandler::Instance().Shout("[GRAPHICS::Init()] | Couldn't create D3D12Device !");
+		std::cout <<"[GRAPHICS::Init()] | Couldn't create D3D12Device !\n";
 	}
 
 	m_pCmdList = new CommandList(m_pDevice);

@@ -25,7 +25,7 @@ Queue<T>::Queue(Queue<T>& const _other)
 	capacity = (capacity > _other.capacity) ? capacity : _other.capacity;
 
 	for (int i = 0; i < loop_range; i++)
-		data[i] = other[i];
+		data[i] = _other[i];
 }
 
 template <typename T>
@@ -35,7 +35,7 @@ Queue<T> Queue<T>::operator=(Queue<T>& const _other)
 	capacity = (capacity > _other.capacity) ? capacity : _other.capacity;
 
 	for (int i = 0; i < loop_range; i++)
-		data[i] = other[i];
+		data[i] = _other[i];
 }
 
 template <typename T>

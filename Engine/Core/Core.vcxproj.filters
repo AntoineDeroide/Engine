@@ -13,5 +13,72 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Containers">
+      <UniqueIdentifier>{d01a837d-509d-4b62-9bb7-09390afd81b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Containers">
+      <UniqueIdentifier>{57928cd6-b700-4689-a7fa-d8e6bd72e699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Containers\SimpleContainers">
+      <UniqueIdentifier>{232ca0be-e7be-450a-b742-d9ce62535406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Containers\SimpleContainers">
+      <UniqueIdentifier>{cbb106a6-4c36-4e19-850c-b2eaf20e023e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Containers\ComplexContainers">
+      <UniqueIdentifier>{fcd6f177-0156-4525-b163-5f23bb671c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Containers\ComplexContainers">
+      <UniqueIdentifier>{1aacc15d-b682-40a3-9190-0700458c14cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\MultiThreading">
+      <UniqueIdentifier>{0f2dc966-49d0-4d4b-975c-73dfeedb9d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\MultiThreading">
+      <UniqueIdentifier>{26e600a3-d6a6-4d30-9171-6c71aa1b8455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SimpleContainers\Matrix.hpp">
+      <Filter>Fichiers d%27en-tête\Containers\SimpleContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleContainers\Quaternion.hpp">
+      <Filter>Fichiers d%27en-tête\Containers\SimpleContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleContainers\Vector.hpp">
+      <Filter>Fichiers d%27en-tête\Containers\SimpleContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexContainers\queue.h">
+      <Filter>Fichiers d%27en-tête\Containers\ComplexContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexContainers\vector.h">
+      <Filter>Fichiers d%27en-tête\Containers\ComplexContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexContainers\array.h">
+      <Filter>Fichiers d%27en-tête\Containers\ComplexContainers</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiThreadingObjects\Thread.h">
+      <Filter>Fichiers d%27en-tête\MultiThreading</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiThreadingObjects\ThreadManager.h">
+      <Filter>Fichiers d%27en-tête\MultiThreading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComplexContainers\array.cpp">
+      <Filter>Fichiers sources\Containers\ComplexContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexContainers\queue.cpp">
+      <Filter>Fichiers sources\Containers\ComplexContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexContainers\vector.cpp">
+      <Filter>Fichiers sources\Containers\ComplexContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiThreadingObjects\Thread.cpp">
+      <Filter>Fichiers sources\MultiThreading</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiThreadingObjects\ThreadManager.cpp">
+      <Filter>Fichiers sources\MultiThreading</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
