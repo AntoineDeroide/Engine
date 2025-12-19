@@ -90,18 +90,19 @@ struct Matrix
 		temp.~Matrix();
 	};
 
-	// Retourne la matrice transposee, pas de modification sur l'objet
-	Matrix GetTranspose()
+	// Retourne la matrice transposee, sans modifier l'objet (interet ?)
+	Matrix GetTranspose() const
 	{
+
 	}; 
 
-	float GetValue() const {};
+	float GetValue(unsigned int row, unsigned int col) const {};
 	Vector4f GetColumn(unsigned int index) const {};
 	Vector4f GetLine(unsigned int index) const {};
 
-	float SetValue(unsigned int column, unsigned int line) const {};
+	float SetValue(unsigned int row, unsigned int col) const {};
 	
 	Matrix Identity() {}; // Set la matrice a l'identite
-	Matrix GetIdentity() const {}; // Retourne la matrice identite, pas de modification sur l'objet
+	Matrix GetIdentity() const {}; // Retourne la matrice identite, sans modifier l'objet
 
 };

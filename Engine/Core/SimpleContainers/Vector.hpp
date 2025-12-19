@@ -1,3 +1,5 @@
+#include <iostream>
+
 struct Vector2f
 {
 #ifdef _DEBUG || DEBUG
@@ -8,6 +10,13 @@ struct Vector2f
 #endif
 
 	float x, y;
+
+	float* Data() const
+	{
+		float toReturn[2] = { x, y };
+
+		return toReturn;
+	}
 
 	Vector2f(float _x = 0.0f, float _y = 0.0f) :
 		x(_x), 
@@ -157,6 +166,13 @@ struct Vector3f
 
 	float x, y, z;
 
+	float* Data() const
+	{
+		float toReturn[3] = { x, y, z };
+
+		return toReturn;
+	}
+
 	Vector3f(float _x = 0.0f, float _y = 0.0f, float _z = 0.0f) :
 		x(_x), 
 		y(_y), 
@@ -293,6 +309,13 @@ struct Vector4f
 #endif
 
 	float x, y, z, w;
+
+	float* Data() const
+	{
+		float toReturn[4] = { x, y, z, w };
+
+		return toReturn;
+	}
 
 	Vector4f(float _x = 0.0f, float _y = 0.0f, float _z = 0.0f, float _w = 0.0f) :
 		x(_x), 
