@@ -37,6 +37,12 @@
     <Filter Include="Fichiers sources\MultiThreading">
       <UniqueIdentifier>{26e600a3-d6a6-4d30-9171-6c71aa1b8455}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\ResourceManagement">
+      <UniqueIdentifier>{bf55fc9b-94c7-4976-aeec-a60493373a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\ResourceManagement">
+      <UniqueIdentifier>{c02d1fd3-7d41-4c2f-803d-06d169e31387}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SimpleContainers\Matrix.hpp">
@@ -63,6 +69,9 @@
     <ClInclude Include="MultiThreadingObjects\ThreadManager.h">
       <Filter>Fichiers d%27en-tête\MultiThreading</Filter>
     </ClInclude>
+    <ClInclude Include="ResourceManagement\File.h">
+      <Filter>Fichiers d%27en-tête\ResourceManagement</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ComplexContainers\array.cpp">
@@ -79,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="MultiThreadingObjects\ThreadManager.cpp">
       <Filter>Fichiers sources\MultiThreading</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManagement\File.cpp">
+      <Filter>Fichiers sources\ResourceManagement</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

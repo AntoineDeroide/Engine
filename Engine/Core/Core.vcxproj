@@ -24,6 +24,7 @@
     <ClInclude Include="ComplexContainers\vector.h" />
     <ClInclude Include="MultiThreadingObjects\Thread.h" />
     <ClInclude Include="MultiThreadingObjects\ThreadManager.h" />
+    <ClInclude Include="ResourceManagement\File.h" />
     <ClInclude Include="SimpleContainers\Matrix.hpp" />
     <ClInclude Include="SimpleContainers\Quaternion.hpp" />
     <ClInclude Include="SimpleContainers\Vector.hpp" />
@@ -34,6 +35,7 @@
     <ClCompile Include="ComplexContainers\vector.cpp" />
     <ClCompile Include="MultiThreadingObjects\Thread.cpp" />
     <ClCompile Include="MultiThreadingObjects\ThreadManager.cpp" />
+    <ClCompile Include="ResourceManagement\File.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
