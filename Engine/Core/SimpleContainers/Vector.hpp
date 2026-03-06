@@ -297,6 +297,21 @@ struct Vector3f
 
 		return *this;
 	};
+
+	float operator[](int _index)
+	{
+		switch (_index)
+		{
+		case 0 :
+			return x; break;
+		case 1 :
+			return y; break;
+		case 2 :
+			return z; break;
+		default:
+			return NULL;
+		}
+	}
 };
 
 struct Vector4f
@@ -449,6 +464,23 @@ struct Vector4f
 
 		return *this;
 	};
+
+	float operator[](int _index)
+	{
+		switch (_index)
+		{
+		case 0:
+			return x; break;
+		case 1:
+			return y; break;
+		case 2:
+			return z; break;
+		case 3:
+			return w; break;
+		default:
+			return NULL;
+		}
+	}
 };
 
 /// Colors are defined between 0 and 255. For alpha, 255 is opaque and 0 is transparent.
