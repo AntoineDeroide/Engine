@@ -1,7 +1,7 @@
 #ifndef FOUNDRY_TRANSFORM2D__H_
 #define FOUNDRY_TRANSFORM2D__H_
 
-#include <glm/glm.hpp>
+#include "SimpleContainers/Vector.hpp"
 
 /// <summary>
 /// Describes a 2D element in a 2D space world.
@@ -48,20 +48,20 @@ public:
 	void		SetShearing(glm::vec2 _shear);
 	void		SetShearing(float _u, float _v);
 	void		SetShearingOnAxis(Axis _axis, float _shear);
-	glm::vec2	GetShearing() const;
+	Vector2f	GetShearing() const;
 
 	void		SetMirroringOnAxis(Axis _axis);
 
-	void		SetScale(glm::vec2 _scale);
+	void		SetScale(Vector2f _scale);
 	void		SetScale(float _width, float _height);
-	glm::uvec2	GetScale() const;
+	Vector2f	GetScale() const;
 
 	void		SetRotation(float _rotX, float _rotY);
-	glm::vec2	GetRotation() const;
+	Vector2f	GetRotation() const;
 
-	void		SetPosition(glm::vec2 _pos);
+	void		SetPosition(Vector2f _pos);
 	void		SetPosition(float _x, float _y);
-	glm::vec2	GetPosition() const;
+	Vector2f	GetPosition() const;
 
 	glm::mat3	GetTransformationMatrix() const;
 	void		SetTransformationMatrix();
