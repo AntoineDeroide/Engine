@@ -63,6 +63,9 @@
     <ClInclude Include="MultiThreadingObjects\ThreadManager.h">
       <Filter>Fichiers d%27en-tête\MultiThreading</Filter>
     </ClInclude>
+    <ClInclude Include="Transform2D.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ComplexContainers\array.cpp">
@@ -79,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="MultiThreadingObjects\ThreadManager.cpp">
       <Filter>Fichiers sources\MultiThreading</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform2D.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
